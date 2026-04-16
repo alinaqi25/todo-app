@@ -1,7 +1,7 @@
 {
   "name": "chapter_3",
   "version": "1.0.0",
-  "description": "Lmao ded kela",
+  "description": "Full-stack Todo list app built with ExpressJS/NodeJS and PostgreSQL. Features JWT authentication",
   "main": "index.js",
   "scripts": {
     "start": "node --watch --env-file=.env ./src/server.js",
