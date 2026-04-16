@@ -1,7 +1,7 @@
 {
   "name": "chapter_3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lmao ded kela",
   "main": "index.js",
   "scripts": {
     "start": "node --watch --env-file=.env ./src/server.js",
