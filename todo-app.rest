@@ -1,0 +1,21 @@
+### GET /
+GET http://localhost:6767/
+
+### POST  /auth/register
+POST http://localhost:6767/auth/register
+Content-Type: application/json
+
+{
+    "username": "Ali",
+    "password": "salkajsdlk"
+}
+
+
+### POST  /auth/login
+POST http://localhost:6767/auth/login
+Content-Type: application/json
+
+{
+    "username": "Ali",
+    "password": "salkajsdlk"
+}
