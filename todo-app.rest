@@ -6,7 +6,7 @@ POST http://localhost:6767/auth/register
 Content-Type: application/json
 
 {
-    "username": "Ali",
+    "username": "Ali2",
     "password": "salkajsdlk"
 }
 
@@ -19,3 +19,32 @@ Content-Type: application/json
     "username": "Ali",
     "password": "salkajsdlk"
 }
+
+### FETCH ALL TODOS with GET /todos (protected)
+GET http://localhost:6767/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2NTg5NDI2LCJleHAiOjE3NzY2NzU4MjZ9.we9OsR2Pdp47TOiGEt4pXeoBC842Jnb7Z2oYIMBqAP8
+
+
+### CREATE NEW TODOS with POST /todos (protected)
+POST http://localhost:6767/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2NTg4NDg2LCJleHAiOjE3NzY2NzQ4ODZ9.QtZU5xtaFMb13AAgNBPt1_mTU2hZUFifeNJ53dvtLxw
+Content-Type: application/json
+
+{
+    "task": "Do something! HAMZA KI GAAND MAARNI"
+}
+
+
+### EDIT A TODO with PUT /todos/:id (protected)
+PUT http://localhost:6767/todos/5
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2NTg4NDg2LCJleHAiOjE3NzY2NzQ4ODZ9.QtZU5xtaFMb13AAgNBPt1_mTU2hZUFifeNJ53dvtLxw
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+
+### delete A TODO with DELETE /todos/:id (protected)
+DELETE http://localhost:6767/todos/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2NTg4NDg2LCJleHAiOjE3NzY2NzQ4ODZ9.QtZU5xtaFMb13AAgNBPt1_mTU2hZUFifeNJ53dvtLxw
